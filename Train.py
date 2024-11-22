@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-DYP = r"D:\Fall Detection.v4-resized640_aug3x-accurate.yolov8\data.yaml"
+DYP = r"D:\FallGuard\data.yaml"
 MT = "yolov8m.pt"
 EP = 50
 ISZ = 640

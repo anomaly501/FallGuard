@@ -13,7 +13,7 @@ This project utilizes a custom-trained YOLOv8 model to detect falls in both pre-
 *   Python 3.8+
 *   Ultralytics YOLOv8: `pip install ultralytics`
 *   OpenCV for Python: `pip install opencv-python`
-*   A custom-trained YOLOv8 model file (`best.pt` in the examples).
+*   A custom-trained YOLOv8 model file).
 
 ## Installation
 
@@ -27,11 +27,11 @@ This project utilizes a custom-trained YOLOv8 model to detect falls in both pre-
 
 2.  **Set up a virtual environment (recommended):**
     ```bash
-    python -m venv venv
+    python -m  ProjectV  ProjectV
     # On Windows
-    .\venv\Scripts\activate
+    .\ ProjectV\Scripts\activate
     # On macOS/Linux
-    source venv/bin/activate
+    source  ProjectV/bin/activate
     ```
 
 3.  **Install the required libraries:**

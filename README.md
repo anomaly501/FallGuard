@@ -46,17 +46,17 @@ This project utilizes a custom-trained YOLOv8 model to detect falls in both pre-
 
 Before running the scripts, you might need to adjust the following variables within the Python files:
 
-**In both `detect_video.py` and `detect_webcam.py`:**
+**In both `RealTime-FallGuard.py` and `RealTime-FallGuard.py`:**
 
 *   `model_path`: **Crucial!** Update this to the absolute or relative path of your trained `.pt` model file. The current examples use absolute paths like `D:\FallGuard\...` and `D:\fall detection\...`.
 *   `confidence_threshold`: Adjust the minimum confidence score (0.0 to 1.0) for detections to be considered valid. Default is `0.7`.
 
-**In `detect_video.py`:**
+**In `RealTime-FallGuard.py`:**
 
 *   `input_video_path`: Path to the video file you want to process.
 *   `output_video_path`: Path where the processed video with detections will be saved.
 
-**In `detect_webcam.py`:**
+**In `RealTime-FallGuard.py`:**
 
 *   `cv2.VideoCapture(1)`: The index `1` refers to the webcam device. If you only have one webcam, this might need to be `0`. If you have multiple, you might need to experiment to find the correct index.
 
@@ -64,11 +64,11 @@ Before running the scripts, you might need to adjust the following variables wit
 
 ### 1. Detecting Falls in a Video File
 
-1.  Ensure you have saved the first script as `detect_video.py`.
-2.  Modify the `model_path`, `input_video_path`, and `output_video_path` variables inside `detect_video.py` to match your setup.
+1.  Ensure you have saved the first script as `RealTime-FallGuard.py`.
+2.  Modify the `model_path`, `input_video_path`, and `output_video_path` variables inside `RealTime-FallGuard.py` to match your setup.
 3.  Run the script from your terminal:
     ```bash
-    python detect_video.py
+    python RealTime-FallGuard.py
     ```
 4.  The script will process the input video frame by frame.
 5.  An OpenCV window titled 'YOLOv8 Real-Time Detection' will pop up, showing the processed frames.
@@ -77,12 +77,12 @@ Before running the scripts, you might need to adjust the following variables wit
 
 ### 2. Detecting Falls from a Webcam
 
-1.  Ensure you have saved the second script as `detect_webcam.py`.
-2.  Modify the `model_path` variable inside `detect_webcam.py`.
+1.  Ensure you have saved the second script as `RealTime-FallGuard.py`.
+2.  Modify the `model_path` variable inside `RealTime-FallGuard.py`.
 3.  Adjust the webcam index in `cv2.VideoCapture(index)` if necessary (e.g., change `1` to `0`).
 4.  Run the script from your terminal:
     ```bash
-    python detect_webcam.py
+    python RealTime-FallGuard.py
     ```
 5.  An OpenCV window titled 'YOLOv8 Real-Time Detection' will appear, displaying the live webcam feed with bounding boxes around detected falls.
 6.  Press 'q' while the OpenCV window is active to stop the webcam feed and exit the script.
